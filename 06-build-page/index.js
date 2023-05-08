@@ -15,7 +15,7 @@ const assets = path.join(__dirname, 'assets');
 const index = path.join(dist, 'index.html');
 const style = path.join(dist, 'style.css');
 
-const indexStream = createReadStream(template, 'utf-8');
+const indexStream = createReadStream(template);
 const styleStream = createWriteStream(style);
 
 (async function () {
